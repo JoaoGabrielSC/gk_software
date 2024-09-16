@@ -1,0 +1,43 @@
+.content {
+    margin-left: 30px;
+    padding: 30px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    overflow: hidden;
+}
+
+th {
+    position: sticky;
+    top: 0; /* Sticks to the top when you scroll */
+    background-color: #e77544; /* Ensure the header has a background color */
+    color: rgb(0, 0, 0);
+    z-index: 1000; /* Make sure the header stays above table rows */
+    font-size: small;
+}
+
+tbody {
+    display: block;
+    max-height: 100vh; /* Set the maximum height for the scrollable table body */
+    overflow-y: auto;
+}
+
+thead, tbody tr {
+    font-size: medium;
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Ensures the table structure doesn't break */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    /* padding with size of sidebar dinammicly*/
+    padding-left: 10px;
+}
